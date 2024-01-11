@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: #c8e8e0;
+}
+.header{
+    width: 100%;
+    background-color: rgb(37, 202, 37);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: lime;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.btn-2{
+    background-color: lime;
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: black;
+    transition: 0.4s ease-in-out;
+    text-decoration: none;
+}
+.btn-2:hover{
+    background-color: forestgreen;
+}
+
+.container{
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    width: 600px;
+    height: 420px;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: rgb(2, 49, 2);
+}
+.login-box{
+    width: 280px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3fee6b;
+}
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 4px solid #3fee6b;
+    margin-bottom: 50px;
+    padding: 13px;
+}
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #3fee6b;
+}
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    float: left;
+    margin: 0 10px;
+}
+.button{
+    width: 100%;
+    padding: 8px;
+    color: #ffffff;
+    background: none #3fee6b;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+}
